@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid Exercise 7</title>
+    </head>
+    <style>
+        .container {
+            padding: 34px;
+
+            display: inline grid;
+            width: 90vw;
+
+            column-gap: 145px;
+            row-gap: 122px;
+            grid-template-columns: repeat(3, 300px);
+
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .item {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.032);
+            margin: 10px;
+            padding: 10px;
+
+
+
+
+        }
+
+        .item a {
+            margin: 5px;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            border: 2px;
+            border-radius: 5px;
+            background-color: rgb(6, 125, 39);
+
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+        }
+        .content{
+            padding: 70px;
+            width: 70vw;
+            margin: 50px 50px;
+            text-align: center;
+        }
+        .content-2{
+            font-size: 34px;
+        }
+    </style>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt="">
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><span>Products </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                        <li><span>Pricing </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                        <li><span>Resources </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                        <li><span>About Us </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                        <li>
+                            <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="">
+                </div>
+
+                </li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content"><h1>Download <b>UltraEdit </b> for Windows <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" width="112" height="32"></h1>
+        <div class="content-2">Download and try UltraEdit before you buy it! This download includes the Windows version of the text editor.</div></div>
+        <div class="container">
+            <div class="item item-1">
+                <h3>
+
+                    English
+                </h3>
+                <h4><small>&nbsp;</small></h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-2">
+                <h3>
+
+                    Deutsch
+                </h3>
+                <h4>
+                    <small>German</small>
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="item item-3">
+                <h3>
+
+                    Italiano
+                </h3>
+                <h4><small>
+                        Italian
+
+                    </small>
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-4">
+                <h3>
+
+                    Espanol
+                </h3>
+                <h4>
+                    <small>
+
+                        Spanish
+                    </small>
+
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-5">
+                <h3>
+
+                    francais
+                </h3>
+                <h4><small>
+
+                        French
+                    </small>
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-6">
+                <h3>
+
+                    Portugues brasilero
+                </h3>
+                <h4>
+                    <small>
+
+                        Brazilian Portuguese
+                    </small>
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-6">
+                <h3>
+
+                    日本
+                </h3>
+                <h4>Japanese </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-7">
+                <h3>
+
+                    한국어
+
+                </h3>
+                <h4>
+                    <small>
+                        Korean
+                    </small>
+
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-8">
+                <h3>
+
+                    华语
+                </h3>
+                <h4>
+                    <small>
+
+                        Chinese
+                    </small>
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+            <div class="item item-9">
+                <h3>
+
+                    華語
+                </h3>
+                <h4>
+                    <small>
+
+                        Traditional Chinese
+                    </small>
+                </h4>
+                <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
